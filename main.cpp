@@ -20,7 +20,7 @@ void addModelsAndLights(std::vector<Model*>& models, std::vector<LightSource*>& 
 
 	Model* cube = new Model("../models/cube/cube.gltf");
 	cube->translate(0.0f, 8.0f, 0.0f);
-	LightSource* cubeLight = new LightSource(*cube, glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), SPOT_LIGHT);
+	LightSource* cubeLight = new LightSource(*cube, glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), POINT_LIGHT);
 	cubeLight->direction = glm::vec3(0.0f, -1.0f, 0.0f);
 	cubeLight->linear = 0.1;
 	cubeLight->quadratic = 0.1;
